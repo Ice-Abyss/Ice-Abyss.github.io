@@ -1,0 +1,40 @@
+<html>
+<title>IceAbyss Home</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="./img/xuexiao.png" width="100%" alt="">
+            <h3 class="title">IceAbyss</h3>
+            <h3 class="titles">https://github.com/ice-abyss</h3>
+            <img class="icon" src="./img/down.png" alt="">
+            <div class='ribbon'>
+                <a href='./index.html'><span>Home</span></a>
+                <a href="./blog.html"><span>Blog</span></a>
+                <a href='./about.html'><span>About</span></a>
+
+
+            </div>
+
+        </div>
+        <audio autoplay="autoplay" id="audio" loop="loop">
+                <source src="./video/music.mp3" type="audio/MP3">
+               
+        </audio>
+        <img class="music_img" src="./img/music_img.png" alt="">
+    </div>
+
+</body>
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function() {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+
+</html>
