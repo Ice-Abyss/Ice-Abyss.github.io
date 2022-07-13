@@ -16,6 +16,10 @@ h1{
     color: white;
 }
 
+h3{
+  color: white;
+}
+
 label{
     color: white;
 }
@@ -187,4 +191,26 @@ label{
       font-size: 26px;
     }
   }
-  
+
+
+  /*music img*/
+  .music_img {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 28px;
+    height: 30px;
+    animation: muscis 5s linear infinite;
+}
+
+audio {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+}
+
+
+.ribbon a:hover span {
+  background: #FFD204;
+  margin-top: 0;
+}

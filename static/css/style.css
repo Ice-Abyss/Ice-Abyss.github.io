@@ -1179,3 +1179,13 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.music_img {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 28px;
+  height: 30px;
+  animation: muscis 5s linear infinite;
+}
+
