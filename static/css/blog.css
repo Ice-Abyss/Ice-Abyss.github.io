@@ -42,7 +42,7 @@ label{
   .nav-menu a {
     display: block;
     position: relative;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -213,4 +213,28 @@ audio {
 .ribbon a:hover span {
   background: #FFD204;
   margin-top: 0;
+}
+
+
+
+
+
+#footer {
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.content {
+  height: 1800px;
+  width: 100%;
+  text-align: center;
 }

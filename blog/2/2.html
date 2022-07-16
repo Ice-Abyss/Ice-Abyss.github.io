@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第二篇：2D图片变3D?!</title>
+        <script type="text/javascript" src="2.js"></script>
+        <link rel="shortcut icon" href="../../static/images/icon.ico">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link id="theme" rel="stylesheet" type="text/css" href="light.css"
+ 
+    </head>
+    <body>
+
+        <audio autoplay="autoplay" id="audio" loop="loop">
+            <source src="かたわれ時.mp3" type="audio/MP3">
+        </audio>
+
+
+        <a href="https://github.com/ice-abyss" target="_blank" class="github-corner" aria-label="View source on GitHub">
+            <svg width="80" height="80" viewBox="0 0 250 250"
+                style="fill:#000000; color:rgb(255, 255, 255); position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
+                aria-hidden="true">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+            </svg>
+            <style>
+                .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+                }
+        
+                @keyframes octocat-wave {
+        
+                0%,
+                100% {
+                    transform: rotate(0)
+                }
+        
+                20%,
+                60% {
+                    transform: rotate(-25deg)
+                }
+        
+                40%,
+                80% {
+                    transform: rotate(10deg)
+                }
+                }
+        
+                @media (max-width:500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none
+                }
+        
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out
+                }
+                }
+                </style>
+            </a>
+
+
+        <h1 align="center">第二篇：2D图片变3D？！</h1>
+
+
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="header-tops">
+            <div class="container">
+              
+                <!--<h1><a href="index.html">#</a></h1> -->
+                <h2>
+                <div class="jz  ys" id="chakhsu"></div>
+                </h2>
+                <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="../../index.html">Home(主页)</a></li>
+                    <!--  <li><a href="#about">关于</a></li> -->
+                    <li><a href="../../blog.html">Blog(博客)</a></li>
+                    <li><a href="../../tools.html">Tools(工具)</a></li>
+                    <!--  <li><a href="#portfolio">Soft</a></li> -->
+                    <!--<li><a href="#">联系</a></li>-->
+                    <li><a href="../../about.html">About(关于)</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+
+
+
+        <br>
+
+
+
+
+        <button id="theme-toggle">开启黑暗模式</button>
+        <p>最近，我看到了一个特别高级的项目：<a href="https://github.com/vt-vl-lab/3d-photo-inpainting">3d-photo-inpainting</a>&&&<a href="https://shihmengli.github.io/3D-Photo-Inpainting/">官网在此</a></p>
+        <h3>概述</h3>
+        <p>这个项目似乎是由Virginia Tech(弗吉尼亚理工大学)，National Tsing Hua University(国立清华大学)和Facebook(脸书)一起联合开发的。。？(我不太清楚，但官网上立着他们的名字:))。该项目一共有6k个starts，看得我都羡慕了，我要是有个项目有6k个starts我死都瞑目了，啊哈哈，开个小玩笑哈😅。</p>
+        <p>这个项目中99.7%的文件都是用python写的，只有0.3%的文件是用shell写的，可见得python在人工智能和科技算法中是稳稳的排在了老大C位上，不过也确实是这样，python用其语法的简练性和算法的严密性使其一出现便被其他老前辈语言们称之为高级语言，当然我也挺喜欢python的😁，这也就是python在民间广泛流传和兴起的原因。</p>
+        <p>说了这么多，我们回到今天的主人公3d-photo-inpainting吧，他在官方的<a href="https://arxiv.org/abs/2004.04727">Paper(论文)</a>中这样写到✍：这个项目是利用使用情境感知分层深度内画来制成3D影像，将单个RGB-D输入图像转换为3D照片的方法 - 一种用于新型视图合成的多层表示，其中包含原始视图中遮挡区域中的幻觉颜色和深度结构。使用具有显式像素连通性的分层深度图像作为基础表示，并提出一个基于学习的内画模型，该模型以空间上下文感知的方式将新的局部颜色和深度内容合成到遮挡区域中。使用标准图形引擎，可以使用运动视差有效地渲染生成的 3D 照片。反正说白了大概就是利用2D图片中的层次效果将其分层，再将层与层之间加上一个效果就对了(自己瞎说的，非权威回答😅)。</p>
+        <h3>实例</h3>
+        <p>好了，让我们来看看它的具体效果吧：</p>
+        <div>
+            <video src="video/1.mp4" width="240" controls autoplay></video>
+            <video src="video/2.mp4" width="240" controls autoplay></video>
+        </div>
+        <p>啊哈哈，好吧，与其说是3D，我更愿意称它为2.5D，但不管怎么说，它也总算是动起来了。√👍</p>
+        <h3>操作</h3>
+        <p>现在我们来看看究竟怎么操作吧：</p>
+        <p>在它的官方网站中是为我们提供好了Google Colab的在线Demo的，这样我们就只需要跟着Demo一步一步点下去就行了，当然如果有大佬想要把代码clone(克隆)到本地操作也是可以的，但比较麻烦，在这里就只演示Demo操作了:)</p>
+        <p>首先，我们来到<a href="https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz">Google Colab的在线Demo</a>这里，登录我们的Google账号，可别被那一整页的代码给吓跑了，其实非常简单，只需要动动我们的小手，点几下就好了：首先是①Prepare environment，我们只需要点它下面的运行按钮就行了,如图：</p>
+        <div>
+            <img alt="1" src="images/1.png" width="600px">
+        </div>
+        <p>等它加载好之后(出现小绿勾)就接着依次点击②Download script and pretrained model，③Switch off off-screen rendering，④Please upload .jpg files to /content/3d-photo-inpainting-master/image/和⑤Execute the 3D Photo Inpainting的运行按钮就行了。如图：</p>
+        <div>
+            <img alt="2" src="images/2.png" width="600px">
+            <img alt="3" src="images/3.png" width="600px">
+        </div>
+        <p>在点击④Please upload .jpg files to /content/3d-photo-inpainting-master/image/时它下面会出现一个框框让我们上传要转3D的图片，如图，选择要上传的图片：</p>
+        <div>
+            <img alt="4" src="images/4.png" width="600px">
+        </div>
+        <p>继续点击⑤Execute the 3D Photo Inpainting，并继续漫长的等待。</p>
+        <div>
+            <img alt="5" src="images/5.png" width="600px">
+        </div>
+        <p>当最终的3D影像生成后，我们可以在左侧的目录/文件/3d-photo-inpainting/image中看到我们刚才上传的图片文件，在目录/文件/3d-photo-inpainting/video中可以看到生成的视频文件，该项目目前有四种3D格式可选：circle,dolly-aoom-in,swing和zoom-in。双击它或右击点下载便可以下载。😀</p>
+        <div>
+            <img alt="6" src="images/6.png" width="300px">
+            <img alt="7" src="images/7.png" width="300px">
+        </div>
+        <p>能把2D图片变成3D的我当然要试试啦，对不起了，wlop老师！下面便是原图和转化后的对比😆：</p>
+        <div>
+            <img alt="text" src="images/1.jpg" width="500px">
+            <video src="video/1_circle.mp4" width="500px" controls autoplay></video>
+            <video src="video/1_dolly-zoom-in.mp4" width="500px" controls autoplay></video>
+            <video src="video/1_swing.mp4" width="500px" controls autoplay></video>
+            <video src="video/1_zoom-in.mp4" width="500px" controls autoplay></video>
+        </div>
+        <p>啊哈哈，我觉得最后一张做得最好(因为没穿模)，还有点雅韵美，你们觉得呢。😉</p>
+        <p>🎵本期背景音乐：かたわれ時</p>
+        <p>好了，这就是本期2D图片变3D的全部内容了，我是冰渊(IceAbyss)，感谢观看，我们下期再见:)👋👋🏻👋🏼👋🏽👋🏾👋🏿</p>
+        <p>若有错漏或者维权的地方请联系我->邮箱📧iceabyss545@gmail.com</p>
+            <br><br><br>
+        
+        <div id="footer">CopyRight©copy2022    冰渊(IceAbyss) 版权所有</div>
+
+
+    </body>
+</html>

@@ -10,6 +10,14 @@ p{
     color: white;
 }
 
+a{
+  color: white;
+}
+
+li{
+  color: white;
+}
+
 
 
 
@@ -202,4 +210,28 @@ audio {
 .ribbon a:hover span {
   background: #FFD204;
   margin-top: 0;
+}
+
+
+
+
+
+#footer {
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.content {
+  height: 1800px;
+  width: 100%;
+  text-align: center;
 }

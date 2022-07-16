@@ -1,19 +1,26 @@
 
 /*--------------------------------------------------------------
 # General
---------------------------------------------------------------*/
+--------------------------------------------------------------*/ 
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   position: relative;
  /* 下面是磨砂效果，可选 */
- backdrop-filter: blur(10px); 
+ /*backdrop-filter: blur(10px);*/ 
+ background-image: url(../images/background_index.png);
+ width:100%;
+ height:100%;
+ background-size:100% 100%;
+ position:absolute;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='static/images/ia5.jpg',sizingMethod='scale');
 }
 
 body::before {
   content: "";
   position: fixed;
-  background-image:url(../images/ia3.jpg);
+  background-image:url(../images/ia5.jpg);
   background-size: cover;
   left: 0;
   right: 0;
@@ -22,6 +29,8 @@ body::before {
   z-index: -1;
 }
 
+
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -29,7 +38,8 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #00ff77;
+  background-color: black;
 }
 
 a:hover {
@@ -76,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(7, 0, 66, 0.8);
 }
 
 #header h2 span {
@@ -137,6 +147,7 @@ audio {
   right: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -153,6 +164,7 @@ audio {
 }
 
 .nav-menu li + li {
+  color: white;
   margin-left: 30px;
 }
 
@@ -271,6 +283,7 @@ audio {
   color: #fff;
 }
 
+
 /* Header Top */
 #header.header-top {
   height: 80px;
@@ -351,7 +364,7 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #b4b4b4;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1189,3 +1202,26 @@ section .container {
   animation: muscis 5s linear infinite;
 }
 
+
+
+
+
+#footer {
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.content {
+  height: 1800px;
+  width: 100%;
+  text-align: center;
+}
