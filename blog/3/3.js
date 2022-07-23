@@ -16,3 +16,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 })
+
+
+// window.onload=function(){
+//     var topbtn = document.getElementById("btn");
+//     var timer = null;
+//     topbtn.onclick=function(){
+//         timer = setInterval(function() {
+//             var backtop = document.body.scrollTop;
+//             document.body.scrollTop -=100;
+//         }, 30);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+// var btn =document.getElementsByClassName("btn")[0];
+// window.onscroll=function(){
+//     var top = document.documentElement.scrollTop;
+//     top >1000 ? btn.style.right="20px":btn.style.right="-50px"
+// }
+// btn.onclick = function(){
+//     var settime = setTimeout(()=>{
+//         var top = document.documentElement.scrollTop;
+//         top > 0 ? document.documentElement.scrollTop = top - 50 : clearInterval(settime);
+//     },2)
+// }

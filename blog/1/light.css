@@ -240,3 +240,31 @@ audio {
   width: 100%;
   text-align: center;
 }
+
+
+
+
+
+
+/*to top*/
+.btn{
+  transition: all .2s ease-out;
+  box-shadow: 0px 0px 20px 0px rgba(255,255,255,005);
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(97, 41, 41);
+  border-radius: 50%;
+  z-index: 999;
+}
+.oo{
+  width: 0px;
+  height: 0px;
+  transform: translate(12px,8px);
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid #65BCF3;
+}
