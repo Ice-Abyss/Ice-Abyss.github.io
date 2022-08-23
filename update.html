@@ -53,17 +53,19 @@
              <div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
              </a></div>
              <nav class="animated">
-                 <ul>
+                <ul>
                      
                     <li><a href="/index.html">Home(主页)</a></li>
 
-					<li><a href="/blog.html">Blog(博客)</a></li>
+                    <li><a href="/blog.html">Blog(博客)</a></li>
 
-					<!--<li><a href="/tools.html">Relax(娱乐)</a></li>-->
+                    <li><a href="../../about/index.html">About(关于)</a></li>
 
-					<li><a href="https://iceabyss.github.io/about/index.html">About(关于)</a></li>
+                    <li><a href="../../iasearch.html">IASearch(IA搜索页)</a></li>
 
-					<li><a href="https://iceabyss.github.io/update">UpdateLog(更新日志)</a></li>
+                    <li><a href="/music.html">Music(音乐)</a></li>
+
+                    <li><a href="../../update.html">UpdateLog(更新日志)</a></li>
                      
                  </ul>
              </nav>			
@@ -110,7 +112,7 @@
  <p>2022.8.1->网站v2.0发布</p>
  <p>2022.8.10->增加IASearch - 一个简朴的搜索页</p>
  <p>2022.8.15->提交一篇博客、添加标签功能</p>
- 
+ <p>2022.8.23->网站 v2.1.2 小更新、提交一篇博客</p>
  
  
  
@@ -136,13 +138,7 @@
            <p>本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。</p>
      </div>
          <footer class="article-footer clearfix">
- <!--
-   <div class="article-tags">
-   
-   <span></span> <a href="/tags/性能优化/">性能优化</a>
-   </div>
- -->
- 
+
  
  
  <div class="article-share" id="share">
@@ -178,15 +174,15 @@
      <!-- 配置中启用多说时，导入相应代码 -->
      
  
- 
+<!--  
  </div>  
        <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
- <!--
+
    <div id="toc" class="toc-aside">
    <strong class="toc-title">文章目录</strong>
    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Canvas-性能优化"><span class="toc-number">1.</span> <span class="toc-text">Canvas 性能优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-上下文切换"><span class="toc-number">1.1.</span> <span class="toc-text">Canvas 上下文切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas-拆分"><span class="toc-number">1.2.</span> <span class="toc-text">Canvas 拆分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制范围的拆分"><span class="toc-number">1.2.1.</span> <span class="toc-text">绘制范围的拆分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#堆叠层次的拆分"><span class="toc-number">1.2.2.</span> <span class="toc-text">堆叠层次的拆分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas-拆分的开销"><span class="toc-number">1.2.3.</span> <span class="toc-text">Canvas 拆分的开销</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#离屏渲染"><span class="toc-number">1.3.</span> <span class="toc-text">离屏渲染</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#各种离屏渲染场景"><span class="toc-number">1.3.1.</span> <span class="toc-text">各种离屏渲染场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OffscreenCanvas-API-能力"><span class="toc-number">1.3.2.</span> <span class="toc-text">OffscreenCanvas API 能力</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他-Canvas-优化方式"><span class="toc-number">1.4.</span> <span class="toc-text">其他 Canvas 优化方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#增量渲染"><span class="toc-number">1.4.1.</span> <span class="toc-text">增量渲染</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结束语"><span class="toc-number">2.</span> <span class="toc-text">结束语</span></a></li></ol>
    </div>
- -->
+
  
  
  <div id="asidepart">
@@ -194,71 +190,28 @@
  <aside class="clearfix">
  
        
-     <div class="archiveslist">
-         <p class="asidetitle">最近文章</p>
-             <ul class="archive-list">
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/blog/3/3.html" title="第三篇：网络是如何运作的？">第三篇：网络是如何运作的？</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/blog/2/2.html" title="第二篇：2D图片变3D？！">第二篇：2D图片变3D？！</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/blog/1/1.html" title="第一篇：Hello World!">第一篇：Hello World!</a>
-                 </li>
-                 
-             
- <!--				
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/04/09/front-end-performance-startup/" title="前端性能优化--加载流程篇">前端性能优化--加载流程篇...</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/03/06/front-end-performance-optimization/" title="前端性能优化--归纳篇">前端性能优化--归纳篇</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/02/27/about-updating/" title="前端这几年--答辩晋级这件事">前端这几年--答辩晋级这件事...</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/02/07/front-end-engineering/" title="我所理解的前端工程化">我所理解的前端工程化</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/01/09/angular-design-ivy-6-detect-change/" title="Angular框架解读--Ivy编译器之变更检测">Angular框架解读--Ivy编译...</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2021/12/25/my-2021/" title="2021 年度总结--冲啊打工人">2021 年度总结--冲啊打工人...</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2021/12/12/about-front-end-14/" title="前端这几年--14.技术深度是伪命题吗">前端这几年--14.技术深度是伪命题...</a>
-                 </li>
-                 
- -->				
-                 
+</div>
+<div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+    <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+    <aside class="clearfix"> -->
+
+
+<!--  
+ <br>
+<div class="archiveslist">
+	<p class="asidetitle"><a href="/tags/index.html">标签</a></p>
+	<ul class="archive-list">
+		<li class="archive-list-item">
+			<a href="/tags/聊天灌水/index.html">聊天灌水</a>
+			<a href="/tags/技术分享/index.html">技术分享</a>
+			<a href="/tags/好文翻译/index.html">好文翻译</a>
+
+		</li>
+	</ul>
+</div> -->
+
              
                  
              
@@ -1063,7 +1016,7 @@
          </ul>
  </div>
  -->
- 
+<!--  
      <div class="archiveslist">
      <p class="asidetitle"><a href="/archives">about</a></p>
        <ul class="archive-list">
@@ -1073,11 +1026,11 @@
            </li>
        </ul>
    </div>
- 
-   <div class="rsspart">
+  -->
+   <!-- <div class="rsspart">
      <a href="https://github.com/ice-abyss" target="_blank" title="rss">Github follow me</a>
  </div>
- 
+  -->
  </aside>
  </div>
      </div>
