@@ -4,7 +4,7 @@
  <head><meta name="generator" content="Hexo 3.9.0">
    <meta charset="UTF-8">
    
-     <title>Markdown语法篇</title>
+     <title>i wanna 游戏制作（一）</title>
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
      
      <meta name="author" content="IceAbyss">
@@ -59,7 +59,7 @@
              
              <div id="textlogo">
                  <h1 class="site-name"><a href="/" title="IceAbyss Blog">IceAbyss Blog</a></h1>
-                 <h2 class="blog-motto">Markdown语法篇</h2>
+                 <h2 class="blog-motto">i wanna 游戏制作（一）</h2>
              </div>
              <div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
              </a></div>
@@ -90,7 +90,7 @@
    <h1 itemprop="name">
      
      
-       <a href="4.html" title="Hello World!" itemprop="url">Markdown语法篇</a>
+       <a href="4.html" title="Hello World!" itemprop="url">i wanna 游戏制作（一）</a>
    </h1>
  
    
@@ -100,7 +100,7 @@
    <p class="article-time">
      
      
-     <time datetime="2022-7-14T11:00:01.000Z" itemprop="datePublished">2022-8-8</time>
+     <time datetime="2022-8-21T11:00:01.000Z" itemprop="datePublished">2022-8-23</time>
      
    </p>
  </header>
@@ -121,145 +121,110 @@
 
      <div class="article-content">
 
-    <h2>目录</h2>
-    <li>概述</li>
-    <li>依赖</li>
-    <li>标题</li>
-    <li>字体</li>
-    <li>引用</li>
-    <li>分割线</li>
-    <li>图片</li>
-    <li>超链接</li>
-    <li>列表</li>
-    <li>代码</li>
-    <li>结语</li>
-    
-
-
-    <h2>概述</h2>
-    <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。
-    <img alt="md_logo" src="imgs/md_logo.png">
-    <p>因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。</p>
-    <p>因此Markdown已经是每个人必须所掌握的一项技能了。</p>
-    <p>不过没关系，markdown的语法比HTML还简单，简单到令人难以置信。</p>
-
-    
-    <h2>依赖</h2>
-    <p>markdown文件的扩展名是<code>.md</code>，所以我们只需要将文件的扩展名改为<code>.md</code>，就可以创建出一个markdown文件了。</p>
-    <p>那么用什么来写markdown呢，其实直接用记事本或其它的文本编辑器打开就可以直接写了，但是那样不仅不美观而且还不高效，这是最不能忍受的！</p>
-    <p>所谓：</p>
-    <blockquote>
-        工欲善其事，必先利其器
-    </blockquote>
-    <p>若是有个专门编写markdown的编辑器，那必将使我们事半功倍！</p>
-    <p>在这里，我强烈推荐一款专业的markdown编辑器<a href='https://typoraio.cn/'>「Typora」</a>！（这不是打广告:）它真的非常好用，到运用熟悉之后，许多操作不需要自己敲出来，只需要按快捷方式便可直接对文本进行操作√。但是在 Typora 正式发布 1.0 版本的时候，进入了付费时代。不过还好，它的价格并不算太贵，只需要支付89元人民币就可以在3台设备里使用:)</p>
-    <p>如果实在不想买也没关系，网上还有在线版的markdown编辑器，如 <a href='https://md.mzr.me/'>MdEditor</a>...等等。虽说功能没有Typora那么全，但像我们这种非盈利用户来说已经完全够用了。</p>
-    <p>好了，该准备的咱都准备好了，终于可以来敲markdown了！</p>
-
-
-    <h2>标题</h2>
-    <p>标题是文档中必不可少的一个内容。</p>
-    <p>在markdown中标题是有分级的，即含有一级标题、二级标题、三级标题等等。</p>
-    <p>我们可以在想要设置为标题的文字前面加<code>#</code>来表示此处为标题。</p>
-    <p>一个 # 是一级标题，二个 # 是二级标题，以此类推。</p>
-    <p><b>注意：</b>最高为六级标题！！！</p>
-    <img alt="md_logo" src="imgs/bt.png">
-
-
-    <h2>字体</h2>
-    <p>一篇文章是否层次分明、有主有次当然和字体有关系了，那么在markdown中是怎么改变字体的样式的呢：
-    <li>加粗</li>
-    <p>想要突出某些关键词，最好的方法就是给文字加粗了，那么怎么加粗呢？那就是将要加粗的文字左右分别用两个 * 号包起来。（如下图）</p>
-    <li>斜体</li>
-    <p>斜体就将要倾斜的文字左右分别用一个*号包起来（如下图）</p>
-    <li>斜体加粗</li>
-    <p>那么若要二者合一就将要倾斜和加粗的文字左右分别用三个*号包起来（如下图）</p>
-    <li>删除线</li>
-    <p>将要加删除线的文字左右分别用两个~~号包起来（如下图）</p>
-    <img alt="ziti" src="imgs/ziti.png">
-
-
-    <h2>引用</h2>
-    <p>那么是否能在markdown里引入一段话呢？答案是肯定的。</p>
-    <p>在引用的文字前加<code>></code>即可。引用也可以嵌套，如加两个<code>>></code>，三个<code>>>></code>，以此类推...不过好像也没什么用处 :)</p>
-    <img alt='引用' src="imgs/yingyong.png">
-    
 
 
 
-    <h2>分割线</h2>
-    <p>如何将上下两块内容分开呢，答案就是分割线。</p>
-    <p>在markdown中三个或者三个以上的 - 或者 * 都可以组成一条分割线。（如下图）</p>
-    <img alt='分割线' src="imgs/fenggexian.png">
-
-
-
-    <h2>图片</h2>
-    <p>markdown还有比其它文档多的一个功能那就是支持插入图片:)</p>
-    <p>插入图片的语法为：</p>
-    <pre>![图片alt](图片地址 ''图片title'')</pre>
-    <p>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</p>
-    <p>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加（如下图）。</p>
-    <img alt='图片' src="imgs/tupian.png">
-    <p>markdown格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使用。</p>
-
-
-
-    <h2>超链接</h2>
-    <p>如何在markdown里加入一个网站的超链接呢？它的语法非常简单：</p>
-    <pre>[超链接名](超链接地址 "超链接title")</pre>
-    <p>title可加可不加（如下图）</p>
-    <img alt='超链接' src="imgs/chaolianjie.png">
-
-
-    <h2>列表</h2>
-    <p>列表也是平常必要使用的，列表在markdown中分为3类：无序列表、有序列表和嵌套列表。</p>
-    <p><b>无序列表</b> -> 语法：无序列表用 - + * 任何一种都可以</p>
-    <p><b>有序列表</b> -> 语法：数字加点</p>
-    <p><b>嵌套列表</b> -> 语法：上一级和下一级之间敲三个空格即可</p>
-    <img alt='列表' src="imgs/liebiao.png">
-
-
-
-    <h2>表格</h2>
-    <p>没错，在markdown中还能写表格！这是连我也没想到的。</p>
-    <p>语法：</p>
-    <pre>
-        表头|表头|表头
-        ---|:--:|---:
-        内容|内容|内容
-        内容|内容|内容
-    </pre>
-    <p>第二行分割表头和内容。有一个就行，为了对齐，多加了几个</p>
-    <p>文字默认居左</p>
-    <p>两边加：表示文字居中||||右边加：表示文字居右</p>
-    <img alt='表格' src="imgs/biaoge.png">
+    <h1 id="i-wanna-游戏制作（一）">i wanna 游戏制作（一）</h1>
+<h2 id="介绍">介绍</h2>
+<p>什么是 i wanna 游戏？在百度百科中有一个非常直观的描述：I wanna 是一款原创类虐心系列游戏。</p>
+<p>这么说我是非常赞同的，因为在 i wanna 游戏中玩家需要通过自己的操作获得游戏胜利，游戏的难度极高，一般人很难通关游戏。😅</p>
+<p>这个系列是由 I wanna be the guy 这款游戏延伸，形成了现在数千款游戏构成的庞大系列。这意味着每个人都可以做i wanna系列的游戏了。</p>
+<p>那么具体 i wanna 的相貌如何呢？给你看张图你就明白了：</p>
+<p><img src="imgs/OIP-C.jpg" alt="OIP-C"></p>
+<p>看看这满屏幕的刺，感觉不像是游戏，而更像是折磨😂。因为游戏的难度极高，因此通关后有极大的成就感，相信不少的小伙伴都非常喜欢。</p>
+<p>我之前玩的 i wanna系列游戏 kokomi kokomi kokomi 虽然难度只有37，但它的前五张图我过了两个小时，死了660次。😅我也不怕出丑，给大家看看：（<strong>注：</strong>右上角是死亡次数和时间）</p>
+<p><img src="imgs/kokomi.png" alt="kokomi"></p>
+<p>我特别喜欢B站上<a href="https://space.bilibili.com/168598">逍遥散人的 i wanna 游戏视频</a>👈，大家喜欢可以去看一下。</p>
+<p>网上关于GameMaker 8 唯一能看的资料：<a href="https://gm8.nihil.cc/">GameMaker 8.0 从入门到入土 </a></p>
+<p><strong>因为网上的 i wanna 和 GameMaker 8 的教程少之又少，所以我都是看着文档一点一点试出来的，若有不对，欢迎指出 :)</strong></p>
+<h2 id="引擎下载">引擎下载</h2>
+<p>这次做游戏的主引擎我选择的是 GameMaker 8.0，因为相比于 unity 、虚幻4等游戏引擎更好上手，也更容易做像 i wanna 一样的2D小游戏。</p>
+<p>在那之后我们还需要下载一个专门制作 i wanna 的引擎，网上有很多种，在这里我选择 yuuutu（玉兔）引擎，因为玉兔引擎对新手特别友好。 :) <a href="https://www.mediafire.com/file/dagnsfmaz1jc8xb/IWBTE_yuuutu_edition_ver2.17.zip/file">点击这里下载 yuuutu 引擎</a></p>
+<h2 id="界面">界面</h2>
+<p>当我们准备好主引擎和玉兔引擎之后，可以复制一份玉兔引擎并打开作为今天的开发地。<strong>注意：不要直接用下载下来的玉兔引擎，不然以后要再开发还需要重新下载！</strong></p>
+<p>打开后的界面是这样的：</p>
+<p><img src="imgs/gm.png" alt="gm"></p>
+<p>界面主要分为 4 部分：</p>
+<ul>
+<li>工具栏 ：从左到右依次为 -&gt; 创建新工程、打开游戏工程、保存工程 、创建可执行文件、上传至开发者之家、运行游戏、运行调试模式、创建精灵、创建声音、创建背景、创建路径、创建脚本、创建字体、创建时间轴、创建对象、创建房间、改变游戏信息、改变游戏全局设定、扩展包、查看帮助文档。常用的有 @保存工程：这个很重要，要不然你做了一天的工程就因为忘点保存就白做了。@创建可执行文件：当你的游戏工程做完之后，就可以把工程打包成可执行文件发给你的小伙伴玩了。@运行游戏：当你想试试工程文件的运行效果时，可以点击运行游戏试玩。</li>
+<li>文件栏：文件栏就是放一些工程中需要用到的文件，例如对象、贴图、音乐、脚本等等。                                                             
+<br><strong>Sprites</strong>
+存放所有精灵贴图，当然这些贴图可以自己编辑，也可以自己设置一下碰撞盒
+<br><strong>Sounds/SE</strong>
+存放的是游戏的音效文件
+<br><strong>Backgrounds</strong>
+存放的是背景图片和一些瓷砖贴图
+<br><strong>Paths</strong>
+存放的是路径，可以让游戏中的物体沿一定的路径移动
+<br><strong>Scripts</strong>
+存放的是脚本文件，果引擎内置了不少方便的脚本供使用，可用来进行一些初始化操作，和实现一些功能，比如<strong>淡入淡出</strong>，<strong>放射一圈物体</strong>，<strong>闪屏效果</strong>和<strong>屏幕抖动</strong>等等
+<br><strong>Fonts</strong>
+字体文件
+<br><strong>Time Lines</strong>
+存放的是时间轴，可设定一定步数（帧）后执行某项操作，精确度较高，一般用于做耐久关卡和音游
+<br><strong>Objects</strong>
+游戏物体，比如砖块，玩家，存档点，刺，传送点，如果有需要的话你可以尽情的对它们的代码进行修改，当然前提是你最好确保改坏了还能改回来
+<br><strong>Rooms</strong>
+存放的是游戏房间，也称为场景，引擎也提供了许多的房间实例供我们参考</li>
+<li>主界面：我们可以在主界面打开房间画地图、放对象、帖帖图、写脚本等等一系列操作。</li>
+<li>新闻界面：主要是一些新闻，没啥用，点击下方 Hide 可隐藏。</li>
+</ul>
+<h2 id="创建房间">创建房间</h2>
+<p>我们可以在文件栏的 Rooms 下右键创建房间、也可以在 Rooms 目录下的文件夹内右键创建房间。</p>
+<p>在主界面选择 <strong>设定</strong> 来调整房间的基本参数，名称随便起，宽、高一般是 800 , 608 ，其它值保持默认就好。然后在主界面上方更改网格数，一般为 32X32 的网格。（如下图）</p>
+<p><img src="imgs/sheding.png" alt="sheding"></p>
+<h2 id="制作第一个简单的地图">制作第一个简单的地图</h2>
+<h3 id="1-画个简单的场地">1. 画个简单的场地</h3>
+<p>①改背景，方便制作和贴图：点击背景图片，将背景色改为类似于天空的颜色或者其他。</p>
+<p>②画砖块：在对象中我们可以选择要添加的物体，选择 <strong>Block--&gt;Block</strong>，开始在房间画砖块，按住 shift 键可以连续地绘制，如果画错可以鼠标右键删除。我们可以把背景颜色调暗一点来画（提示：这里也可以调节精灵的透明度，因为精灵不显示所以不影响最终的效果）
+注意<strong>切回对象界面再画</strong>（切到星空界面也可以），<strong>不可以画歪</strong>！</p>
+<p>③给砖块贴图：然后我们点击<strong>贴图面板</strong>，选择<strong>Alltiles图片</strong>，开始为画好的砖块贴上贴图。</p>
+<p>④添加初始人物：<strong>点击对象</strong>，在画好以后添加一个<strong>playerStart</strong>，作为玩家初始化位置： <strong>player_etc--&gt;playerStart</strong></p>
+<p>⑤加刺：然后我们就可以加点刺了 generic threats--&gt;spikeUp</p>
+<p>⑥加存档 <strong>saves--&gt;savePoint</strong></p>
+<p>好了，地图画完了，我画的是这样的，你们画的是什么样的呢？</p>
+<p><img src="imgs/whd.png" alt="whd"></p>
+<p>最后我们还得调一下初始房间的设置，把初始房间设为我们制作好的房间。在文件栏中打开 Object --&gt; warpStart 选择 player 打开执行代码。</p>
+<p><img src="imgs/warpstart.png" alt="warpstart"></p>
+<p>将代码中的 roomTo = 后面的房间改成你自己的房间名称，如我的房间名称为 level1 ，我要将其该为 roomTo = leve1; （如下图）</p>
+<p><img src="imgs/roomto.png" alt="roomto"></p>
+<p>之后再点击工具栏的运行游戏就可以玩了！</p>
+<h3 id="2-创建传送点">2. 创建传送点</h3>
+<p>传送点可以将你传送到任意一个房间。可在对象 --&gt; warp 里放置到地图中。</p>
+<p>当然我们还需要指定传送点的传送房间、转场效果等等。这就需要我们编写一些脚本了。<strong>鼠标选择传送点，ctrl+右键，创建时执行代码</strong>，如果不小心直接鼠标右键把它删了可以 ctrl+Z 撤销。</p>
+<p>然后我们就可以开始编写脚本了，这里用的语言是 GameMaker Language (GML)，warp 的主要参数如下：</p>
+<pre><code class="language-GML">roomTo = leve1	// 必填，传送到的房间名称
+kind = 0	// 可选，使用的房间转场效果
+text = &quot;text&quot;	//可选，绘制文字
+color = c_red	//可选，文字颜色
+</code></pre>
+<p>具体的转场特效可以看看帮助文档：</p>
+<p><img src="imgs/kind.png" alt="kind"></p>
+<p>我的传送点做好了，你呢？</p>
+<p><img src="imgs/warpok.png" alt="warpok"></p>
+<h3 id="3开始做坑（飞刺）">3.开始做坑（飞刺）</h3>
+<p>首先我们要先有一个触发器，在对象中找到 free trigger --&gt; freetrigger ，把它放在你想让玩家触碰之后执行坑的位置，然后ctrl+鼠标右键，创建时执行代码。具体参数如下：</p>
+<pre><code class="language-GML">trg = 1;		// 必填，触发器编号
+image_yescale = 2;	// 可选，是扩大Y轴范围（正向下负向上）
+image_xescale = 2;  // 可选，是扩大X轴范围（正向右负向左）
+snd = sndCherry		//可选，触发时音效
+</code></pre>
+<p>然后我们就可以在对象的 free trigger 中找到我们需要的陷阱，把它放在地图上，然后ctrl+鼠标右键，创建时执行代码。具体参数如下：</p>
+<pre><code class="language-GML">trg = 1;	// 必填，与其相应的触发器编号
+v = 10;		//可选，若选与h二选一，纵轴移动的速度（正为向下，负为向上）
+h = 10;		//可选，若选与v二选一，横轴移动的速度（正为向右，负为向左）
+</code></pre>
+<p>如下图：</p>
+<p><img src="imgs/xianjing.png" alt="xianjing"></p>
+<p><img src="imgs/chufaqi.png" alt="chufaqi"></p>
+<h2 id="结语">结语</h2>
+<p>这就是一个最基本的 i wanna 游戏了，如果你制作好了一个完整的作品，可以点击工具栏“创建可执行exe文件”导出。</p>
+<p>好了，这就是本期 i wanna 游戏制作的所有内容了，因为网上的教程真的特别特别少，所有我全都是照着文档一步一步打出来的，如有错误，欢迎大佬帮忙指出。</p>
 
 
 
 
-    <h2>代码</h2>
-    <p>代码的编写是每个优雅的开发者所必备的，在markdown中代码分为两种：单行代码和代码块。</p>
-    <p><b>单行代码</b> -> 语法：代码之间分别用一个反引号包起来</p>
-    <p><b>代码块</b> -> 语法：代码之间分别用三个反引号包起来，且两边的反引号单独占一行，可在第一次三个反引号后面指定代码语言</p>
-    <img alt='代码' src="imgs/daima.png">
-
-
-
-    <h2>流程图</h2>
-    <p>emm，吓到我了，没想到markdown还支持流程图，流程图我还不太熟悉，所以就直接从网上找了一个：</p>
-    <img alt='流程图' src="imgs/liouchengtu.png">
-
-
-
-    <h2>结语</h2>
-    <p>好了，markdown的基本语法大概就是这些了，是不是特别简单 :)</p>
-
-
-
-
-
-    <p>🎵本期背景音乐：Illusionary Daytime</p>
+    <p>🎵本期背景音乐：Bloom of Youth</p>
     <p>感谢观看，我是冰渊(IceAbyss)，我们下期再见:)👋👋🏻👋🏼👋🏽👋🏾👋🏿</p>
     <p>若有错漏或者维权的地方请联系我->邮箱📧3211997138@qq.com</p>
  
@@ -269,20 +234,7 @@
  
  
  
- 
- 
- <!--
-     <blockquote>
-     <p>我有一个游戏梦，Canvas 做游戏应该也很好玩吧。</p>
-     </blockquote>
- -->
- 
- <!--buy me a coffee
-     </div>
-     <img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/2code2.jpg" width="200" height="200" style="display:block;margin: 0 auto;" />
-     <p style="text-align: center;margin-top: 10px;margin-bottom: 10px;">码生艰难，写文不易，给我家猪囤点猫粮了喵~</p>
-     <div class="article-content">
- -->
+
  
  
      </div>
@@ -296,7 +248,7 @@
             
             <div class="article-tags">
    
-                <span></span> <a href="/tags/技术分享/index.html">技术分享</a>
+                <span></span> <a href="/tags/游戏制作/index.html">游戏制作</a>
                 </div>
  
  
@@ -328,9 +280,9 @@
   
  
  <div class="next">
- <a href="/blog/3/3.html"  title="Blog(博客)">
+ <a href="/blog/4/4.html"  title="Blog(博客)">
   <strong>NEXT:</strong><br/> 
-  <span>网络是如何运作的？
+  <span>Markdown语法篇
  </span>
  </a>
  </div>
@@ -370,6 +322,7 @@
                     </a>
                 </li>
 
+                
 
                 <li class="archive-list-item">
                     <a class="archive-list-link" href="/blog/4/4.html" title="Markdown语法篇">Markdown语法篇
@@ -413,23 +366,7 @@
 
                  
              
- <!--				
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/04/09/front-end-performance-startup/" title="前端性能优化--加载流程篇">前端性能优化--加载流程篇...</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/03/06/front-end-performance-optimization/" title="前端性能优化--归纳篇">前端性能优化--归纳篇</a>
-                 </li>
-                 
-             
-                     
-                 <li class="archive-list-item">
-                     <a class="archive-list-link" href="/2022/02/27/about-updating/" title="前端这几年--答辩晋级这件事">前端这几年--答辩晋级这件事...</a>
-                 </li>
-                 
+ <!--	
              
                      
                  <li class="archive-list-item">

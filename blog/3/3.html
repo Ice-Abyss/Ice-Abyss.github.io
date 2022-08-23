@@ -25,6 +25,17 @@
     
     <link rel="stylesheet" href="/blog_something/css/style.css">
     
+
+	<!-- APlayer -->
+	<link rel="stylesheet" type="text/css" href="../../musicUI/APlayer.min.css">
+	<script type="text/javascript" src="../../musicUI/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vconsole/dist/vconsole.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+	<script src="APlayer.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+
+
+
 <script type="text/javascript">
 var _hmt = _hmt || [];
 (function() {
@@ -38,9 +49,7 @@ var _hmt = _hmt || [];
 </head>
 </html>
   <body>
-	<audio autoplay="autoplay" id="audio" loop="loop">
-		<source src="木漏れ日のささやき.mp3" type="audio/MP3">
-	</audio>
+
     <header>
       <div>
 		
@@ -56,21 +65,21 @@ var _hmt = _hmt || [];
 			</a></div>
 			<nav class="animated">
 				<ul>
-                     
-                    <li><a href="/index.html">Home(主页)</a></li>
+					 
+					<li><a href="/index.html">Home(主页)</a></li>
 
 					<li><a href="/blog.html">Blog(博客)</a></li>
 
-					<!--<li><a href="/tools.html">Relax(娱乐)</a></li>-->
-
 					<li><a href="../../about/index.html">About(关于)</a></li>
 
-                    <li><a href="../../iasearch.html">IASearch(IA搜索页)</a></li>
+					<li><a href="../../iasearch.html">IASearch(IA搜索页)</a></li>
+
+					<li><a href="/music.html">Music(音乐)</a></li>
 
 					<li><a href="../../update.html">UpdateLog(更新日志)</a></li>
-                     
-                 </ul>
-			</nav>			
+					 
+				 </ul>
+			 </nav>				
 </div>
 
     </header>
@@ -95,6 +104,23 @@ var _hmt = _hmt || [];
     
   </p>
 </header>
+
+
+<br>
+<!-- APlayer -->
+<div id="player1"></div>
+<script>
+	if (/mobile/i.test(window.navigator.userAgent)) {
+		new VConsole();
+	}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+<script src="demo.js"></script>
+
+<!-- APlayer Done -->
+
+
+
 	<div class="article-content">
 		
 <!--	
@@ -108,39 +134,6 @@ var _hmt = _hmt || [];
 <h1 id="当 google 的“g”键被按下"><a href="#当 google 的“g”键被按下"></a>当 google 的“g”键被按下</h1><p>当您只需要按下“g”时，浏览器就会收到该事件，整个自动完成机器就会进入高速运转状态。根据您的浏览器算法，如果您不是处于私密/隐身模式，则网址栏下方的Dropbox中会显示各种建议。这些算法中的大多数都根据搜索历史记录和书签对结果进行优先级排序。您将会不会继续输入“google.com”因此都无关紧要，但是在您到达那里之前会运行大量代码，并且每次按键都会优化建议。它甚至可能在您输入之前就已经推荐“google.com”。</p>
 <h2 id="当您点击“ENTER”时"><a href="#当您点击“ENTER”时" class="headerlink" title="Canvas 当您点击“ENTER”时"></a>当您点击“ENTER”时</h2><p>选择一个零点（我没看懂😅原文是To pick a zero point），我们按下键盘上的 Enter 键。此时，特定于回车键的电路被关闭（直接或电容）。这允许少量电流流入键盘的逻辑电路，键盘扫描每个按键开关的状态，消除开关快速间歇闭合的电噪声，并将其转换为键码整数。然后，键盘控制器对键码进行编码，以便传输到计算机。现在，这几乎普遍通过通用串行总线（USB）或蓝牙连接。</p>
 
-<!--
-<table>
-<thead>
-<tr>
-<th>赋值属性</th>
-<th>耗时(ms)</th>
-<th>耗时（非法赋值）(ms)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>font</code></td>
-<td>200+</td>
-<td>1500+</td>
-</tr>
-<tr>
-<td><code>fillStyle</code></td>
-<td>80+</td>
-<td>800+</td>
-</tr>
-<tr>
-<td><code>strokeStyle</code></td>
-<td>50+</td>
-<td>800+</td>
-</tr>
-<tr>
-<td><code>lineWidth</code></td>
-<td>30+</td>
-<td>500+</td>
-</tr>
-</tbody>
-</table>
--->
 <p>对于 USB 键盘：</p>
 <p>• 生成的键码由内部键盘电路存储器存储在称为“端点”的寄存器中。</p>
 <p>• 主机 USB 控制器每大约 10 毫秒轮询一次“端点”，因此它获取存储在其上的键码值。</p>
@@ -531,29 +524,9 @@ LI.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
 <p>翻译自<a href="https://github.com/vasanthk/how-web-works">vasanthk/how-web-works..</a></p>
 <p>🎵本期背景音乐：木漏れ日のささやき</p>
 <p>感谢观看，我是冰渊(IceAbyss)，我们下期再见:)👋👋🏻👋🏼👋🏽👋🏾👋🏿</p>
-<p>若有错漏或者维权的地方请联系我->邮箱📧iceabyss545@gmail.com</p>
+<p>若有错漏或者维权的地方请联系我->邮箱📧3211997138@qq.com</p>
 
 
-
-
-
-
-
-
-
-
-<!--
-	<blockquote>
-	<p>我有一个游戏梦，Canvas 做游戏应该也很好玩吧。</p>
-	</blockquote>
--->
-
-<!--buy me a coffee
-	</div>
-	<img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/2code2.jpg" width="200" height="200" style="display:block;margin: 0 auto;" />
-	<p style="text-align: center;margin-top: 10px;margin-bottom: 10px;">码生艰难，写文不易，给我家猪囤点猫粮了喵~</p>
-	<div class="article-content">
--->
 
 
 	</div>
@@ -634,6 +607,13 @@ var jiathis_config = {data_track_clickback:'true'};
             <ul class="archive-list">
                 
 
+				<li class="archive-list-item">
+					<a class="archive-list-link" href="/blog/5/5.html" title="i wanna 游戏制作（一）">i wanna 游戏制作（一）
+					</a>
+				</li>
+
+
+
                 <li class="archive-list-item">
                     <a class="archive-list-link" href="/blog/4/4.html" title="Markdown语法篇">Markdown语法篇
                     </a>
@@ -666,6 +646,7 @@ var jiathis_config = {data_track_clickback:'true'};
 			<a href="/tags/聊天灌水/index.html">聊天灌水</a>
 			<a href="/tags/技术分享/index.html">技术分享</a>
 			<a href="/tags/好文翻译/index.html">好文翻译</a>
+			<a href="/tags/游戏制作/index.html">游戏制作</a>
 
 		</li>
 	</ul>

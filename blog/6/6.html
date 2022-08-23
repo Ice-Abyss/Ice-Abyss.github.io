@@ -4,7 +4,7 @@
  <head><meta name="generator" content="Hexo 3.9.0">
    <meta charset="UTF-8">
    
-     <title>Markdown语法篇</title>
+     <title>网站 v2.1.2 小更新</title>
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
      
      <meta name="author" content="IceAbyss">
@@ -59,7 +59,7 @@
              
              <div id="textlogo">
                  <h1 class="site-name"><a href="/" title="IceAbyss Blog">IceAbyss Blog</a></h1>
-                 <h2 class="blog-motto">Markdown语法篇</h2>
+                 <h2 class="blog-motto">网站 v2.1.2 小更新</h2>
              </div>
              <div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
              </a></div>
@@ -90,7 +90,7 @@
    <h1 itemprop="name">
      
      
-       <a href="4.html" title="Hello World!" itemprop="url">Markdown语法篇</a>
+       <a href="4.html" title="Hello World!" itemprop="url">网站 v2.1.2 小更新</a>
    </h1>
  
    
@@ -100,189 +100,51 @@
    <p class="article-time">
      
      
-     <time datetime="2022-7-14T11:00:01.000Z" itemprop="datePublished">2022-8-8</time>
+     <time datetime="2022-8-21T11:00:01.000Z" itemprop="datePublished">2022-8-23</time>
      
    </p>
  </header>
 
- <br>
 
  <!-- APlayer -->
-    <div id="player1"></div>
+    <!-- <div id="player1"></div>
     <script>
         if (/mobile/i.test(window.navigator.userAgent)) {
             new VConsole();
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-    <script src="demo.js"></script>
+    <script src="demo.js"></script> -->
 
  <!-- APlayer Done -->
 
      <div class="article-content">
 
-    <h2>目录</h2>
-    <li>概述</li>
-    <li>依赖</li>
-    <li>标题</li>
-    <li>字体</li>
-    <li>引用</li>
-    <li>分割线</li>
-    <li>图片</li>
-    <li>超链接</li>
-    <li>列表</li>
-    <li>代码</li>
-    <li>结语</li>
-    
+        <h1 id="网站-v212-小更新">网站 v2.1.2 小更新</h1>
+        <p>2022.8.23 网站迎来又一波小更新啦，这次更新的主要内容都是音乐类的。</p>
+        <p>毕竟每个开发者都不可能每时每刻都循环的敲着代码，一遍一遍紧张的找着bug改，开发者也是人嘛，也得偶尔听听音乐放松一下，没准一听完音乐就又有思路了。每个开发者都可以是音乐欣赏家。</p>
+        <p>那么此次到底更新了什么呢？</p>
+        <h2 id="aplayer-框架">APlayer 框架</h2>
+        <p>首先，为了让读者在阅读博客时有更好的音乐体验，我为原来自动播放的背景音乐添加了一个好看的UI。这里用的是 <a href="https://diygod.me/">DIYgod</a> 大神的 <a href="https://aplayer.js.org/#/">APlayer</a> 框架。（如下图）</p>
+        <p><img src="https://camo.githubusercontent.com/91b81dd25ddf613d7ac4e7b6d124f42bd044c9aa5127f13e382ca9a2c2c7b05a/68747470733a2f2f692e696d6775722e636f6d2f4a44724a5843722e706e67" alt="APlayer"></p>
+        <h2 id="mini-player--框架">mini-player  框架</h2>
+        <p>其次，我还为网页添加了一个<a href="https://iceabyss.github.io/music.html">音乐馆</a>·····为了避免重复造轮子，这里用的是 <a href="https://github.com/muhammed/mini-player">mini-player</a> 的框架，就是界面有点简陋😅。<del>（其实就是因为我懒）</del>。该音乐馆目前还只有五首歌，不喜勿喷🙂。</p>
+        <p>本次更新大概就是这些了···如果大家有什么建议或者想听的歌也可以邮箱或者QQ发给我。😁</p>
+        
+        <blockquote>
+            <p>邮箱：<a href="mailto:iceabyss545@gmail.com" target="_blank" rel="noopener">iceabyss545@gmail.com</a><br>QQ: 3211997138<br>Github: <a href="https://github.com/ice-abyss" target="_blank" rel="noopener">https://github.com/ice-abyss</a></p>
+        </blockquote>
+         
 
+ 
 
-    <h2>概述</h2>
-    <p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。
-    <img alt="md_logo" src="imgs/md_logo.png">
-    <p>因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。</p>
-    <p>因此Markdown已经是每个人必须所掌握的一项技能了。</p>
-    <p>不过没关系，markdown的语法比HTML还简单，简单到令人难以置信。</p>
-
-    
-    <h2>依赖</h2>
-    <p>markdown文件的扩展名是<code>.md</code>，所以我们只需要将文件的扩展名改为<code>.md</code>，就可以创建出一个markdown文件了。</p>
-    <p>那么用什么来写markdown呢，其实直接用记事本或其它的文本编辑器打开就可以直接写了，但是那样不仅不美观而且还不高效，这是最不能忍受的！</p>
-    <p>所谓：</p>
-    <blockquote>
-        工欲善其事，必先利其器
-    </blockquote>
-    <p>若是有个专门编写markdown的编辑器，那必将使我们事半功倍！</p>
-    <p>在这里，我强烈推荐一款专业的markdown编辑器<a href='https://typoraio.cn/'>「Typora」</a>！（这不是打广告:）它真的非常好用，到运用熟悉之后，许多操作不需要自己敲出来，只需要按快捷方式便可直接对文本进行操作√。但是在 Typora 正式发布 1.0 版本的时候，进入了付费时代。不过还好，它的价格并不算太贵，只需要支付89元人民币就可以在3台设备里使用:)</p>
-    <p>如果实在不想买也没关系，网上还有在线版的markdown编辑器，如 <a href='https://md.mzr.me/'>MdEditor</a>...等等。虽说功能没有Typora那么全，但像我们这种非盈利用户来说已经完全够用了。</p>
-    <p>好了，该准备的咱都准备好了，终于可以来敲markdown了！</p>
-
-
-    <h2>标题</h2>
-    <p>标题是文档中必不可少的一个内容。</p>
-    <p>在markdown中标题是有分级的，即含有一级标题、二级标题、三级标题等等。</p>
-    <p>我们可以在想要设置为标题的文字前面加<code>#</code>来表示此处为标题。</p>
-    <p>一个 # 是一级标题，二个 # 是二级标题，以此类推。</p>
-    <p><b>注意：</b>最高为六级标题！！！</p>
-    <img alt="md_logo" src="imgs/bt.png">
-
-
-    <h2>字体</h2>
-    <p>一篇文章是否层次分明、有主有次当然和字体有关系了，那么在markdown中是怎么改变字体的样式的呢：
-    <li>加粗</li>
-    <p>想要突出某些关键词，最好的方法就是给文字加粗了，那么怎么加粗呢？那就是将要加粗的文字左右分别用两个 * 号包起来。（如下图）</p>
-    <li>斜体</li>
-    <p>斜体就将要倾斜的文字左右分别用一个*号包起来（如下图）</p>
-    <li>斜体加粗</li>
-    <p>那么若要二者合一就将要倾斜和加粗的文字左右分别用三个*号包起来（如下图）</p>
-    <li>删除线</li>
-    <p>将要加删除线的文字左右分别用两个~~号包起来（如下图）</p>
-    <img alt="ziti" src="imgs/ziti.png">
-
-
-    <h2>引用</h2>
-    <p>那么是否能在markdown里引入一段话呢？答案是肯定的。</p>
-    <p>在引用的文字前加<code>></code>即可。引用也可以嵌套，如加两个<code>>></code>，三个<code>>>></code>，以此类推...不过好像也没什么用处 :)</p>
-    <img alt='引用' src="imgs/yingyong.png">
-    
-
-
-
-    <h2>分割线</h2>
-    <p>如何将上下两块内容分开呢，答案就是分割线。</p>
-    <p>在markdown中三个或者三个以上的 - 或者 * 都可以组成一条分割线。（如下图）</p>
-    <img alt='分割线' src="imgs/fenggexian.png">
-
-
-
-    <h2>图片</h2>
-    <p>markdown还有比其它文档多的一个功能那就是支持插入图片:)</p>
-    <p>插入图片的语法为：</p>
-    <pre>![图片alt](图片地址 ''图片title'')</pre>
-    <p>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</p>
-    <p>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加（如下图）。</p>
-    <img alt='图片' src="imgs/tupian.png">
-    <p>markdown格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使用。</p>
-
-
-
-    <h2>超链接</h2>
-    <p>如何在markdown里加入一个网站的超链接呢？它的语法非常简单：</p>
-    <pre>[超链接名](超链接地址 "超链接title")</pre>
-    <p>title可加可不加（如下图）</p>
-    <img alt='超链接' src="imgs/chaolianjie.png">
-
-
-    <h2>列表</h2>
-    <p>列表也是平常必要使用的，列表在markdown中分为3类：无序列表、有序列表和嵌套列表。</p>
-    <p><b>无序列表</b> -> 语法：无序列表用 - + * 任何一种都可以</p>
-    <p><b>有序列表</b> -> 语法：数字加点</p>
-    <p><b>嵌套列表</b> -> 语法：上一级和下一级之间敲三个空格即可</p>
-    <img alt='列表' src="imgs/liebiao.png">
-
-
-
-    <h2>表格</h2>
-    <p>没错，在markdown中还能写表格！这是连我也没想到的。</p>
-    <p>语法：</p>
-    <pre>
-        表头|表头|表头
-        ---|:--:|---:
-        内容|内容|内容
-        内容|内容|内容
-    </pre>
-    <p>第二行分割表头和内容。有一个就行，为了对齐，多加了几个</p>
-    <p>文字默认居左</p>
-    <p>两边加：表示文字居中||||右边加：表示文字居右</p>
-    <img alt='表格' src="imgs/biaoge.png">
-
-
-
-
-    <h2>代码</h2>
-    <p>代码的编写是每个优雅的开发者所必备的，在markdown中代码分为两种：单行代码和代码块。</p>
-    <p><b>单行代码</b> -> 语法：代码之间分别用一个反引号包起来</p>
-    <p><b>代码块</b> -> 语法：代码之间分别用三个反引号包起来，且两边的反引号单独占一行，可在第一次三个反引号后面指定代码语言</p>
-    <img alt='代码' src="imgs/daima.png">
-
-
-
-    <h2>流程图</h2>
-    <p>emm，吓到我了，没想到markdown还支持流程图，流程图我还不太熟悉，所以就直接从网上找了一个：</p>
-    <img alt='流程图' src="imgs/liouchengtu.png">
-
-
-
-    <h2>结语</h2>
-    <p>好了，markdown的基本语法大概就是这些了，是不是特别简单 :)</p>
-
-
-
-
-
-    <p>🎵本期背景音乐：Illusionary Daytime</p>
-    <p>感谢观看，我是冰渊(IceAbyss)，我们下期再见:)👋👋🏻👋🏼👋🏽👋🏾👋🏿</p>
-    <p>若有错漏或者维权的地方请联系我->邮箱📧3211997138@qq.com</p>
  
  
  
  
  
  
- 
- 
- 
- <!--
-     <blockquote>
-     <p>我有一个游戏梦，Canvas 做游戏应该也很好玩吧。</p>
-     </blockquote>
- -->
- 
- <!--buy me a coffee
-     </div>
-     <img src="https://github-imglib-1255459943.cos.ap-chengdu.myqcloud.com/2code2.jpg" width="200" height="200" style="display:block;margin: 0 auto;" />
-     <p style="text-align: center;margin-top: 10px;margin-bottom: 10px;">码生艰难，写文不易，给我家猪囤点猫粮了喵~</p>
-     <div class="article-content">
- -->
+
  
  
      </div>
@@ -293,12 +155,7 @@
      </div>
          <footer class="article-footer clearfix">
 
-            
-            <div class="article-tags">
-   
-                <span></span> <a href="/tags/技术分享/index.html">技术分享</a>
-                </div>
- 
+    
  
  
  <div class="article-share" id="share">
@@ -328,20 +185,16 @@
   
  
  <div class="next">
- <a href="/blog/3/3.html"  title="Blog(博客)">
+ <a href="/blog/5/5.html"  title="Blog(博客)">
   <strong>NEXT:</strong><br/> 
-  <span>网络是如何运作的？
+  <span>i wanna 游戏制作（一）
  </span>
  </a>
  </div>
  
  </nav>
  
-     <!-- 如果不是首页且没使用 `comments: false` 关闭评论，则尝试加载评论 -->
- 
-     <!-- 配置中启用多说时，导入相应代码 -->
-     
- 
+   
  
  </div>  
        <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
@@ -364,12 +217,13 @@
         <p class="asidetitle">最近文章</p>
             <ul class="archive-list">
                 
-
+                
                 <li class="archive-list-item">
                     <a class="archive-list-link" href="/blog/5/5.html" title="i wanna 游戏制作（一）">i wanna 游戏制作（一）
                     </a>
                 </li>
 
+                
 
                 <li class="archive-list-item">
                     <a class="archive-list-link" href="/blog/4/4.html" title="Markdown语法篇">Markdown语法篇

@@ -25,6 +25,18 @@
      
      <link rel="stylesheet" href="/blog_something/css/style.css">
      
+
+     
+     <!-- APlayer -->
+     <link rel="stylesheet" type="text/css" href="../../musicUI/APlayer.min.css">
+     <script type="text/javascript" src="../../musicUI/APlayer.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vconsole/dist/vconsole.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+     <script src="APlayer.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+     
+
+     
  <script type="text/javascript">
  var _hmt = _hmt || [];
  (function() {
@@ -38,9 +50,9 @@
  </head>
  </html>
    <body>
-    <audio autoplay="autoplay" id="audio" loop="loop">
-        <source src="ふたりの気持ち.mp3" type="audio/MP3">
-    </audio>
+
+
+
      <header>
        <div>
          
@@ -55,19 +67,19 @@
              <div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
              </a></div>
              <nav class="animated">
-                 <ul>
+                <ul>
                      
                     <li><a href="/index.html">Home(主页)</a></li>
 
-					<li><a href="/blog.html">Blog(博客)</a></li>
+                    <li><a href="/blog.html">Blog(博客)</a></li>
 
-					<!--<li><a href="/tools.html">Relax(娱乐)</a></li>-->
-
-					<li><a href="../../about/index.html">About(关于)</a></li>
+                    <li><a href="../../about/index.html">About(关于)</a></li>
 
                     <li><a href="../../iasearch.html">IASearch(IA搜索页)</a></li>
 
-					<li><a href="../../update.html">UpdateLog(更新日志)</a></li>
+                    <li><a href="/music.html">Music(音乐)</a></li>
+
+                    <li><a href="../../update.html">UpdateLog(更新日志)</a></li>
                      
                  </ul>
              </nav>			
@@ -95,14 +107,25 @@
      
    </p>
  </header>
+
+
+ <br>
+
+ <!-- APlayer -->
+    <div id="player1"></div>
+    <script>
+        if (/mobile/i.test(window.navigator.userAgent)) {
+            new VConsole();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="demo.js"></script>
+
+ <!-- APlayer Done -->
+
+
      <div class="article-content">
-         
- <!--	
-         <div id="toc" class="toc-article">
-             <strong class="toc-title">文章目录</strong>
-         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#网络是如何运作的"><span class="toc-number">1.</span> <span class="toc-text">网络是如何运作的？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#当 google 的“g”键被按下"><span class="toc-number">1.1.</span> <span class="toc-text">当 google 的“g”键被按下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#当您点击“ENTER”时"><span class="toc-number">1.2.</span> <span class="toc-text">当您点击“ENTER”时</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#解析网址"><span class="toc-number">1.3</span> <span class="toc-text">解析网址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#堆叠层次的拆分"><span class="toc-number">1.2.2.</span> <span class="toc-text">堆叠层次的拆分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas-拆分的开销"><span class="toc-number">1.2.3.</span> <span class="toc-text">Canvas 拆分的开销</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#离屏渲染"><span class="toc-number">1.3.</span> <span class="toc-text">离屏渲染</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#各种离屏渲染场景"><span class="toc-number">1.3.1.</span> <span class="toc-text">各种离屏渲染场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OffscreenCanvas-API-能力"><span class="toc-number">1.3.2.</span> <span class="toc-text">OffscreenCanvas API 能力</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他-Canvas-优化方式"><span class="toc-number">1.4.</span> <span class="toc-text">其他 Canvas 优化方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#增量渲染"><span class="toc-number">1.4.1.</span> <span class="toc-text">增量渲染</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#结束语"><span class="toc-number">2.</span> <span class="toc-text">结束语</span></a></li></ol>
-         </div>
- -->			
+         		
 
 <p>在逛Github的时候，我突然发现了一个挺有趣的项目：每种计算机语言的Hello-World。
     <a href="https://github.com/leachim6/hello-world" target="_blank">(项目地址)</a>
@@ -194,7 +217,7 @@
     <p>我真心希望中国能够拥有属于自己的一套编程语言，我也希望某些国家能够以和平交流的心态接纳中国，一起构建人类命运共同体，一起向未来👨👨🏻👨🏼👨🏽👨🏾👨🏿</p>
     <p>🎵本期背景音乐：ふたりの気持ち</p>
     <p>感谢观看，我是冰渊(IceAbyss)，我们下期再见:)👋👋🏻👋🏼👋🏽👋🏾👋🏿</p>
-    <p>若有错漏或者维权的地方请联系我->邮箱📧iceabyss545@gmail.com</p>
+    <p>若有错漏或者维权的地方请联系我->邮箱📧3211997138@qq.com</p>
  
  
  
@@ -294,7 +317,12 @@
     <div class="archiveslist">
         <p class="asidetitle">最近文章</p>
             <ul class="archive-list">
-                
+
+
+                <li class="archive-list-item">
+                    <a class="archive-list-link" href="/blog/5/5.html" title="i wanna 游戏制作（一）">i wanna 游戏制作（一）
+                    </a>
+                </li>
 
                 <li class="archive-list-item">
                     <a class="archive-list-link" href="/blog/4/4.html" title="Markdown语法篇">Markdown语法篇
@@ -328,6 +356,7 @@
 			<a href="/tags/聊天灌水/index.html">聊天灌水</a>
 			<a href="/tags/技术分享/index.html">技术分享</a>
 			<a href="/tags/好文翻译/index.html">好文翻译</a>
+			<a href="/tags/游戏制作/index.html">游戏制作</a>
 
 		</li>
 	</ul>

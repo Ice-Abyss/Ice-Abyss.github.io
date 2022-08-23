@@ -25,6 +25,17 @@
      
      <link rel="stylesheet" href="/blog_something/css/style.css">
      
+
+     <!-- APlayer -->
+     <link rel="stylesheet" type="text/css" href="../../musicUI/APlayer.min.css">
+     <script type="text/javascript" src="../../musicUI/APlayer.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vconsole/dist/vconsole.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+     <script src="APlayer.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+
+
+
  <script type="text/javascript">
  var _hmt = _hmt || [];
  (function() {
@@ -38,9 +49,7 @@
  </head>
  </html>
    <body>
-    <audio autoplay="autoplay" id="audio" loop="loop">
-        <source src="かたわれ時.mp3" type="audio/MP3">
-    </audio>
+
      <header>
        <div>
          
@@ -59,21 +68,22 @@
                      
                     <li><a href="/index.html">Home(主页)</a></li>
 
-					<li><a href="/blog.html">Blog(博客)</a></li>
+                    <li><a href="/blog.html">Blog(博客)</a></li>
 
-					<!--<li><a href="/tools.html">Relax(娱乐)</a></li>-->
-
-					<li><a href="../../about/index.html">About(关于)</a></li>
+                    <li><a href="../../about/index.html">About(关于)</a></li>
 
                     <li><a href="../../iasearch.html">IASearch(IA搜索页)</a></li>
 
-					<li><a href="../../update.html">UpdateLog(更新日志)</a></li>
+                    <li><a href="/music.html">Music(音乐)</a></li>
+
+                    <li><a href="../../update.html">UpdateLog(更新日志)</a></li>
                      
                  </ul>
              </nav>			
  </div>
  
      </header>
+
      <div id="container">
        <div id="main" class="post" itemscope itemprop="blogPost">
      <article itemprop="articleBody"> 
@@ -95,6 +105,24 @@
      
    </p>
  </header>
+
+
+ <br>
+
+     <!-- APlayer -->
+    <div id="player1"></div>
+    <script>
+        if (/mobile/i.test(window.navigator.userAgent)) {
+            new VConsole();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="demo.js"></script>
+
+ <!-- APlayer Done -->
+
+
+
      <div class="article-content">
          
  <!--	
@@ -162,7 +190,7 @@
 
 <p>🎵本期背景音乐：かたわれ時</p>
 <p>好了，这就是本期2D图片变3D的全部内容了，我是冰渊(IceAbyss)，感谢观看，我们下期再见:)👋👋🏻👋🏼👋🏽👋🏾👋🏿</p>
-<p>若有错漏或者维权的地方请联系我->邮箱📧iceabyss545@gmail.com</p>
+<p>若有错漏或者维权的地方请联系我->邮箱📧3211997138@qq.com</p>
  
  
  
@@ -266,6 +294,12 @@
                 
 
                 <li class="archive-list-item">
+                    <a class="archive-list-link" href="/blog/5/5.html" title="i wanna 游戏制作（一）">i wanna 游戏制作（一）
+                    </a>
+                </li>
+
+
+                <li class="archive-list-item">
                     <a class="archive-list-link" href="/blog/4/4.html" title="Markdown语法篇">Markdown语法篇
                     </a>
                 </li>
@@ -297,6 +331,7 @@
 			<a href="/tags/聊天灌水/index.html">聊天灌水</a>
 			<a href="/tags/技术分享/index.html">技术分享</a>
 			<a href="/tags/好文翻译/index.html">好文翻译</a>
+			<a href="/tags/游戏制作/index.html">游戏制作</a>
 
 		</li>
 	</ul>
